@@ -12,7 +12,7 @@ const routes = Router();
 routes.post("/user", Controller_User.CreateUser);
 routes.post("/login", Controller_User.Login);
 routes.get("/users", auth, isAdmin, Controller_User.GetAllUsers);
-routes.put("/upUser/:id", auth, isAdmin, Controller_User.UpdateUser);
+routes.put("/upUser/:id", auth, Controller_User.UpdateUser);
 routes.delete("/delUser/:id", auth, Controller_User.DeleteUser);
 
 routes.post("/product", auth, isAdmin, upload.single("img"), Controller_Product.createProduct);
