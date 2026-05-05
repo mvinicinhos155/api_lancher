@@ -23,7 +23,7 @@ User.init({
         type: sequelize_1.DataTypes.STRING,
     },
     role: {
-        type: sequelize_1.DataTypes.ENUM("ADMIM", "USER"),
+        type: sequelize_1.DataTypes.ENUM("ADMIN", "USER"),
         defaultValue: "USER",
     },
 }, {

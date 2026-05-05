@@ -27,7 +27,7 @@ async function test() {
 ;
 test();
 async function start() {
-    await database_1.sequelize.sync();
+    await database_1.sequelize.sync({ force: true });
     console.log("Tabela criada com sucesso");
 }
 start();

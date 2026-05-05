@@ -6,7 +6,7 @@ class Controller_Product {
         try {
             const { name_product, price, about, categoria } = req.body;
             const fileName = req.file?.filename;
-            const fileUrl = "http://localhost:3000";
+            const fileUrl = "https://api-lancher.onrender.com";
             const baseUrl = `${fileUrl}/uploads/${fileName}`;
             const product = await Produto_1.Product.create({
                 name_product,
