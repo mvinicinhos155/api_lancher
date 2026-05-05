@@ -1,4 +1,4 @@
-import { DataType, DataTypes, Model, Optional } from "sequelize";
+import { DataTypes, Model, Optional } from "sequelize";
 import { sequelize } from "../database/database";
 import { PedidoProduct } from "./Pedido_Produto";
 
